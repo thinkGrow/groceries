@@ -7,6 +7,7 @@
     <title>Groceries</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e641bbc52a.js" crossorigin="anonymous"></script>
 
     <style>
         .font-poppins {
@@ -26,8 +27,20 @@
 
 <body>
     <div class="bg-gradient-to-b from-white to-[#EFEBE3]">
-        <div class="md:container mx-auto px-2 pt-4">
-            <nav>
+        <!-- mobile -->
+        <div class="sm:flex justify-between mb-4 items-center align-middle mt-4 px-4 md:hidden">
+            <img src="images/logo-header-m.png" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="size-12 custom-color">
+                <path fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <hr class="p-10 md:hidden">
+
+        <div class="container mx-auto px-2 pt-4">
+            <nav class="sm:hidden md:block">
                 <div class="flex justify-between items-center">
                     <div>
                         <img class="w-[10.76vw] h-[6.67vh]" src="images/logo-header.png" alt="">
@@ -63,7 +76,7 @@
             <!-- hero section -->
             <div class="flex flex-col gap-8 mt-16 text-center items-center justify-self-center">
                 <!-- text -->
-                <div class="flex flex-col w-[60%] mx-auto gap-4">
+                <div class="sm: flex flex-col w-full mx-auto gap-4 md:w-[60%] mx-auto gap-4">
                     <h1 class="text-5xl">Freshness <span class="custom-color">You Can
                             Count</span> On, Prices You’ll Love!</h1>
                     <p class="text-sm">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
@@ -72,7 +85,8 @@
                 </div>
                 <!-- image -->
                 <div class=" mx-auto">
-                    <img class="h-[60vh] w-[50vw] object-cover" src="images/hero-vegetables.png" alt="">
+                    <img class="sm:h-full w-full object-cover md:sm:h-[60vh] w-[50vw] object-cover"
+                        src="images/hero-vegetables.png" alt="">
                 </div>
             </div>
         </div>
