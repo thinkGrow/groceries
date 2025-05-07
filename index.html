@@ -26,9 +26,11 @@
 
 
 <body>
-    <div class="bg-gradient-to-b from-white to-[#EFEBE3]">
-        <!-- mobile -->
-        <div class="flex justify-between mb-4 items-center align-middle mt-4 px-4 md:hidden">
+
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+
+        <!-- nav : mobile -->
+        <nav class="flex justify-between mb-4 items-center align-middle mt-4 px-4 md:hidden">
             <img src="images/logo-header-m.png" alt="">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                 class="size-12 custom-color">
@@ -36,10 +38,12 @@
                     d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
                     clip-rule="evenodd" />
             </svg>
-        </div>
+        </nav>
         <hr class="p-10 md:hidden">
 
         <div class="container mx-auto px-2 pt-4">
+
+            <!-- nav : md -->
             <nav class="hidden md:block">
                 <div class="flex justify-between items-center">
                     <div>
@@ -72,7 +76,7 @@
                     </div>
                 </div>
             </nav>
-            <!-- <div class=" ..."></div> -->
+
             <!-- hero section -->
             <div class="flex flex-col gap-8 mt-16 text-center items-center justify-self-center">
                 <!-- text -->
@@ -90,7 +94,58 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <!-- service section-->
+        <section class="container mx-auto px-2 pt-4 space-y-8 mb-4">
+            <h1 class="text-5xl">Services</h1>
+
+            <!-- cards -->
+            <div class="flex justify-between mx-auto py-2">
+
+                <!-- card1 -->
+                <div class="flex flex-col gap-6 w-[30%] bg-[#EFEBE3] p-12 rounded-xl text-center items-center">
+                    <div>
+                        <img src="images/service.png" alt="">
+                    </div>
+
+                    <h2 class="text-3xl">24/7 services</h2>
+
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aspernatur!
+                    </p>
+                </div>
+
+                <!-- card2 -->
+                <div class="flex flex-col gap-6 w-[30%] bg-[#EFEBE3] p-12 rounded-xl text-center items-center">
+                    <div>
+                        <img src="images/service.png" alt="">
+                    </div>
+
+                    <h2 class="text-3xl">24/7 services</h2>
+
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aspernatur!
+                    </p>
+                </div>
+
+
+                <!-- card3 -->
+                <div class="flex flex-col gap-6 w-[30%] bg-[#EFEBE3] p-12 rounded-xl text-center items-center">
+                    <div>
+                        <img src="images/service.png" alt="">
+                    </div>
+
+                    <h2 class="text-3xl">24/7 services</h2>
+
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aspernatur!
+                    </p>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
 
 
 </body>
