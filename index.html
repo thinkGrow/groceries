@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groceries</title>
 
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/e641bbc52a.js" crossorigin="anonymous"></script>
     <!-- daisui cdn -->
@@ -171,31 +169,55 @@
         </section>
 
         <!-- popular product section -->
-        <section class="custom-color-secondary-bg p-14">
+        <!-- <section class="custom-color-secondary-bg p-14"> -->
+        <section class="p-14">
 
             <div class="container mx-auto pt-4 space-y-8 my-14 px-10 md:px-2">
 
                 <h1 class="text-4xl custom-color">Popular Products</h1>
 
                 <!-- cards -->
-                <div class="grid grid-cols-4 gap-2 space-x-8">
-
-
-
+                <div class="grid grid-cols-5 gap-6">
                     <!-- card1 BIG -->
-                    <div class="card bg-base-100 card-xl shadow-sm row-span-3">
-                        <div class="card-body">
-                            <h2 class="card-title">30% Off</h2>
-                            <p>Discover a world of treats, toys and essentials handpicked for you
+                    <!-- <div
+                        class="bg-gradient-to-b from-white to-[#EFEBE3] shadow-sm row-span-3 col-span-2  p-8 relative rounded-xl">
+                        <div class="flex flex-col gap-10 align-middle h-6/7 pt-16 w-5/6">
+                            <h2 class="text-white text-5xl">30% Off</h2>
+                            <p class="text-green text-2xl">
+                                Discover a world of treats, toys and essentials
+                                handpicked for you.
                             </p>
                             <div>
-                                <button>Buy Now</button>
+                                <button class="bg-white px-8 py-4 rounded-md text-xl">Buy Now</button>
                             </div>
                         </div>
-                        <div>
-                            <img class="object-cover" src="images/vegetable-offer.png" alt="">
+                        <div class="absolute bottom-0 right-4 w-[60%]">
+                            <img class="w-[100%] h-[100%]" src="images/vegetable-offer.png" alt="">
+                        </div>
+                    </div> -->
+
+                    <!-- card1 BIG -->
+                    <div class="bg-gradient-to-r from-green-500 to-purple-800
+                        shadow-sm row-span-3 col-span-2 p-8 relative rounded-xl">
+                        <!-- Text content -->
+                        <div class="flex flex-col gap-8 h-full pt-8 pr-24">
+                            <h2 class="text-green-900 text-5xl font-bold">30% Off</h2>
+                            <p class="text-green-800 text-xl">
+                                Discover a world of treats, toys, and essentials handpicked for you.
+                            </p>
+                            <button
+                                class="bg-white text-black px-6 py-3 rounded-md text-lg font-semibold w-fit hover:bg-gray-100 transition">
+                                Buy Now
+                            </button>
+                        </div>
+
+                        <!-- Image positioned in bottom right -->
+                        <div class="absolute bottom-0 right-0 w-1/2 max-w-[200px]">
+                            <img class="w-full h-auto object-contain" src="images/vegetable-offer.png"
+                                alt="Vegetables Offer">
                         </div>
                     </div>
+
 
 
                     <!-- card 2 -->
