@@ -12,6 +12,25 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- bounce -->
+    <script>
+        // Reusable bounce trigger
+        function triggerBounce(el) {
+            el.classList.add('bounce-3x');
+            el.addEventListener('animationend', () => {
+                el.classList.remove('bounce-3x');
+            }, {
+                once: true
+            });
+        }
+
+        // On page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const img = document.getElementById('bouncy');
+            triggerBounce(img);
+        });
+    </script>
 </head>
 
 
@@ -89,13 +108,9 @@
                 </div>
                 <!-- image -->
                 <div class=" mx-auto">
-                    <img class="sm:h-full w-full object-cover md:h-[60vh] w-[50vw] object-cover  
-                    transition-transform duration-300 ease-in-out
-                    ease-in-out hover:scale-105
-                    animate-bounce
-                    " src="images/hero-vegetables.png" alt=""
-                        onmouseover=" this.style.animation='bounce 0.5s ease-in-out 3'"
-                        onanimationend=" this.style.animation='none'">
+                    <img class="sm:h-full w-full object-cover md:h-[60vh] w-[50vw] object-cover"
+                        src="images/hero-vegetables.png" alt="" style="cursor: pointer;"
+                        onmouseover="triggerBounce(this)" id="bouncy">
                 </div>
             </div>
         </div>
