@@ -1,0 +1,36 @@
+.bounce-3x {
+  animation-name: bounce3x;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes bounce3x {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-color {
+  color: #169800;
+}
+
+.custom-color-bg {
+  background-color: #169800;
+}
+
+.custom-color-secondary {
+  color: #efebe3;
+}
+
+.custom-color-secondary-bg {
+  background-color: #efebe3;
+}
