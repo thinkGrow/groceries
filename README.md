@@ -2,6 +2,6 @@
 
 Live demo :
 
-thinkgrow.github.io/groceries/
+https://www.thinkgrow.github.io/groceries/
 
 
