@@ -1,6 +1,7 @@
 # groceries
 
+Live demo :
+
 thinkgrow.github.io/groceries/
 
-[View HTML File](./index.html)
 
